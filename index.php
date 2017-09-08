@@ -67,13 +67,13 @@
 					</label>
 					<div class="col-md-10" id="program">
 					<div class="checkbox">
-  					<label><input type="checkbox" value="design" name="program[]">Web Design</label>
+  					<label><input type="checkbox" value="Web design" name="program[]">Web Design</label>
 					</div>
 					<div class="checkbox">
- 					<label><input type="checkbox" value="development" name="program[]">Web Development</label>
+ 					<label><input type="checkbox" value="Web Development" name="program[]">Web Development</label>
 					</div>
 					<div class="checkbox">
-  					<label><input type="checkbox" value="esl" name="program[]">ESL</label>
+  					<label><input type="checkbox" value="ESL" name="program[]">ESL</label>
 					</div>
 					</div>
 					<div class="col-md-offset-2 col-md-2" style="margin-top: 10px;">
