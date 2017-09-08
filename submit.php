@@ -8,6 +8,7 @@ $address = $_POST['address'];
 $skypeid = $_POST['skypeid'];
 $gender = $_POST['gender'];
 $program = $_POST['program'];
+$all_program = implode(",", $program)
 
 ?>
 
@@ -44,7 +45,7 @@ $program = $_POST['program'];
 	<td><?php echo $address; ?></td>
 	<td><?php echo $skypeid; ?></td>
 	<td><?php echo $gender; ?></td>
-	<td><?php echo $program; ?></td>
+	<td><?php echo $all_program; ?></td>
 	</tr>
 
 	</table>

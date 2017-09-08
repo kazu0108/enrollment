@@ -72,12 +72,12 @@
 					<div class="checkbox">
  					<label><input type="checkbox" value="development" name="program[]">Web Development</label>
 					</div>
-					<div class="checkbox disabled">
+					<div class="checkbox">
   					<label><input type="checkbox" value="esl" name="program[]">ESL</label>
 					</div>
 					</div>
 					<div class="col-md-offset-2 col-md-2" style="margin-top: 10px;">
-					<input type="submit" name="submit">
+					<input type="submit" name="submit" value="Send">
 						
 					</div>
 				</div>
