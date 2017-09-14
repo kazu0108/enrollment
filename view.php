@@ -1,16 +1,5 @@
 <?php
 
-
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phonenumber = $_POST['phonenumber'];
-$address = $_POST['address'];
-$skypeid = $_POST['skypeid'];
-$gender = $_POST['gender'];
-$program = $_POST['program'];
-$all_program = implode(",", $program);
-
-
 $servername = "localhost";
 $username = "ody";
 $password = "zarahjean1234";
@@ -18,18 +7,7 @@ $dbname = "enrollment";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = "INSERT INTO student_enrollment (name, email , phone, address, skype, gender, goal) VALUES ('$name', '$email', '$phonenumber', '$address', '$skypeid', '$gender', '$all_program')";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
-
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -48,6 +26,7 @@ $conn->close();
 	<h3 class="text-center">Enrollment Results</h3>
 	<table class="table table-bordered table-hover">
 	<tr>
+		<th class="text-center">Select</th>
 		<th class="text-center">Name</th>
 		<th class="text-center">Email</th>
 		<th class="text-center">Phone Number</th>
@@ -57,15 +36,6 @@ $conn->close();
 		<th class="text-center">Program</th>
 	</tr>
 
-	<tr>
-	<td><?php echo $name; ?></td>
-	<td><?php echo $email; ?></td>
-	<td><?php echo $phonenumber; ?></td>
-	<td><?php echo $address; ?></td>
-	<td><?php echo $skypeid; ?></td>
-	<td><?php echo $gender; ?></td>
-	<td><?php echo $all_program; ?></td>
-	</tr>
 
 	</table>
 	</div>
